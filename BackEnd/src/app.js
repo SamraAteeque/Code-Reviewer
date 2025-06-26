@@ -4,7 +4,10 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+  origin: 'https://code-reviewer-rust-pi.vercel.app/', // your actual frontend URL
+  credentials: true
+}));
 
 
 app.use(express.json())
