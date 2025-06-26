@@ -8,7 +8,8 @@ app.use(cors({
   origin: 'https://code-reviewer-rust-pi.vercel.app', // your actual frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
-}));
+})
+);
 
 
 app.use(express.json())
@@ -19,3 +20,4 @@ app.get('/', (req, res) => {
 
 app.use('/ai', aiRoutes)
 
+module.exports = app;
