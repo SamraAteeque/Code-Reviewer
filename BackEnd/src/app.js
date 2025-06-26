@@ -5,8 +5,8 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors({
-  origin: 'https://code-reviewer-rust-pi.vercel.app', // your actual frontend URL
-    methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: 'https://code-reviewer-iw1z.onrender.com', // your actual frontend URL
+    methods: ["GET", "POST"],
   credentials: true
 })
 );
