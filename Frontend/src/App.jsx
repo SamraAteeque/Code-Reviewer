@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   async function reviewCode() {
-    const response = await axios.post('https://code-reviewer-production-4639.up.railway.app/ai/ping', { code })
+    const response = await axios.post('https://code-reviewer-production-4639.up.railway.app/ai/get-review', { code })
     setReview(response.data)
   }
 
