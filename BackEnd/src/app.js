@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors({
-  origin: '*', // your actual frontend URL
+  origin: 'https://code-reviewer-1-8afe.onrender.com', // your actual frontend URL
     methods: ["GET", "POST"],
   credentials: true
 })
